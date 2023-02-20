@@ -4,7 +4,7 @@ import styles from '../styles/Global';
 import assets from '../assets';
 import Button from './Button';
 
-const SectionWrapper = ({title, description, showBtn, mockupImg, banner}) => {
+const SectionWrapper = ({ title, description, showBtn, mockupImg, banner }) => {
   return (
     <div className={`min-h-screen ${styles.section} ${styles.bgWhite} ${banner}`}>
       <div className={`flex items-center ${styles.boxClass}`}>
