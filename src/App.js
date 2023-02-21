@@ -1,5 +1,6 @@
 import { Download, Features, SectionWrapper } from './components';
 import assets from "./assets";
+import styles from "./styles/Global";
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
         banner="banner02"
       />
       <Download />
+      <div className="px-4 pb-1 pt-6 justify-center items-center bg-primary flex-col text-center banner04">
+        <p className={`${styles.pText} ${styles.whiteText}`}>&copy; Aidan Fournier 2023</p>
+      </div>
     </div>
   );
 }
