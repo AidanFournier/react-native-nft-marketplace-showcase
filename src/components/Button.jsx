@@ -5,7 +5,7 @@ import styles from '../styles/Global';
 const Button = ({ assetUrl, link }) => {
   return (
     <div
-      className={styles.btnBlack}
+      className={`${styles.btnBlack} hover:shadow-lg`}
       onClick={() => window.open(link, "_blank")}
     >
       <img src={assetUrl} alt="expo-icon" className={styles.btnIcon} />
