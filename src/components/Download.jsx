@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from '../styles/Global';
-import assets from '../assets';
+import { scene } from '../assets';
 
 const Download = () => {
   return (
@@ -13,7 +13,7 @@ const Download = () => {
         </div>
         <button onClick={() => window.open("https://github.com/AidanFournier/react-native-nft-marketplace", "_blank")} className={`${styles.btnPrimary}`}>Source Code</button>
         <div className={styles.flexCenter}>
-          <img src={assets.scene} alt="Assortment of mockups" className={styles.fullImg} />
+          <img src={scene} alt="Assortment of mockups" className={styles.fullImg} />
         </div>
       </div>
     </div>
