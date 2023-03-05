@@ -4,7 +4,7 @@ import styles from '../styles/Global';
 import assets from '../assets';
 import Button from './Button';
 
-const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
+const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, reverse, video }) => {
   return (
     <div className={`
       min-h-screen 
@@ -40,10 +40,15 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
           )}
         </div>
         <div className={`flex-1 p-8 sm:px-0 ${styles.flexCenter}`}>
-          <img src={mockupImg} alt="mockup" className={`
+          {mockupImg && <img src={mockupImg} alt="mockup" className={`
             ${reverse ? " fadeLeftMini" : " fadeRightMini"} 
             ${styles.sectionImg}`
-          } />
+          } />}
+          {video && <video width="844" height="390" autoPlay loop muted >
+            <source src={video} type="video/mp4" alt="App running on mobile device" className={`
+            ${reverse ? " fadeLeftMini" : " fadeRightMini"}`
+            } /> Your browser does not support the video tag.
+          </video>}
         </div>
       </div>
     </div>
