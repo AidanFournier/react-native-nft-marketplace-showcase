@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from '../styles/Global';
-import assets from '../assets';
+import { expo } from '../assets';
 import Button from './Button';
 
 const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, reverse, video }) => {
@@ -34,7 +34,7 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
           `}>{description}</p>
           {showBtn && (
             <Button 
-              assetUrl={assets.expo}
+              assetUrl={expo}
               Link="https://expo.dev/@aidoufou"
             />
           )}
