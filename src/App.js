@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <SectionWrapper 
-        title="Your own store of Nifty NFTs. Start Selling and Growing"
+        title="Start selling and growing with your own store of NFTs. "
         description="Buy, store, collect NFTs, exchange & earn crypto. Join 25+ million people using ProNef Marketplace."
         showBtn
         mockupImg={assets.homeHero}
